@@ -1,7 +1,13 @@
-AWSTemplateFormatVersion: 2019-09-09
-Resorces:
+#change date to 2010-09-09 at the top
+#change 'AWS:S3:Bucket' to 'AWS::S3::Bucket'
+#change Resorces to Resources
+#Revision 1
+#0/21/2025
+
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
   S3Bucket:
-    Type: 'AWS:S3:Bucket'
+    Type: 'AWS::S3::Bucket'
     Properties:
       PublicAccessBlockConfiguration:
         BlockPublicAcls: false
